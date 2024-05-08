@@ -1,0 +1,563 @@
+:root {
+    --white: #FFFFFFF --navy-blue: #354562;
+}
+
+.stop-climate-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10rem;
+    background-image: url(assets/home/annie-spratt-135307-unsplash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80%;
+    padding: 6.2rem 3rem;
+
+    .stop-climate-card {
+        padding: 0rem 3rem;
+
+        a {
+            text-decoration: underline;
+        }
+    }
+
+    .stop-climate-card-content,
+    a {
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+}
+
+
+.take-action-section {
+    padding: 0rem 3rem;
+    background-color: var(--shady-green);
+    color: var(--navy-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .customised-heading-2 {
+        margin: 0;
+    }
+}
+
+.take-action-content {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.8rem;
+
+    .take-action-detail {
+        line-height: 1.5;
+    }
+
+    margin-bottom: 5rem;
+}
+
+.mission-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    text-align: center;
+}
+
+.card-container {
+    padding: 0rem 3rem;
+    background-color: white;
+}
+
+.mission-card {
+    transform: translateY(-8%);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 2rem;
+
+    img {
+        aspect-ratio: 2 / 1.5;
+    }
+
+    background-color: white;
+    color:var(--navy-blue);
+    text-align: center;
+
+    .green-button {
+        justify-self: center;
+    }
+}
+
+.mission-card-heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.mission-cards-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 5rem;
+}
+
+
+
+.know-section {
+    background-image: url(assets/home/did-you-know-background@2x.png);
+    background-position: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    padding: 3rem;
+}
+
+.know-card-section {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.know-card {
+    padding: 2rem;
+}
+
+.know-card:first-of-type {
+    padding-top: 0rem;
+}
+
+.know-card-content {
+    display: flex;
+    justify-content: space-between;
+
+    .details-container {
+        display: flex;
+        flex-direction: column;
+
+        .customised-heading {
+            margin-bottom: 1rem;
+        }
+
+        .card-description {
+            height: 100%;
+        }
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        button {
+            padding: 1rem;
+            display: grid;
+            place-items: center;
+
+            .facebook-icon {
+                width: 60%;
+                aspect-ratio: 1;
+            }
+        }
+    }
+}
+
+.story-section {
+    padding: 3rem 3rem 6rem 3rem;
+}
+
+.story-content {
+    margin-top: 3rem;
+    padding: 3rem;
+}
+
+.story-bottom-sub-section {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+
+}
+
+.event-card-container {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    gap: 3rem;
+    grid-template-columns: 1fr;
+}
+
+.event-card {
+    text-align: center;
+
+    .customised-heading {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .event-card-content {
+        margin-bottom: 4rem;
+
+        p {
+            margin-bottom: 6rem;
+        }
+    }
+}
+
+
+
+.input-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    button {
+        padding: 1rem;
+        flex-grow: 1;
+    }
+
+    input {
+        flex-grow: 2;
+        font-size: 1rem;
+    }
+}
+
+
+@media(width > 648px) {
+    html {
+        font-size: 0.9rem;
+    }
+
+    .navigation-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .title-nav-container {
+            flex-direction: column;
+            align-items: start;
+            gap: 2rem;
+
+            .navbar {
+                flex-direction: row;
+                gap: 2rem
+            }
+        }
+    }
+
+    .stop-climate-card {
+        text-align: left;
+
+        .navy-blue-card-title {
+            margin-left: 0;
+        }
+
+        .stop-climate-card-content {
+            text-align: left;
+        }
+
+        a {
+            align-self: start;
+        }
+
+    }
+    .take-action-content {
+        column-gap: 6rem;
+        row-gap: 3rem;
+    }
+
+    .mission-section {
+        .customised-heading {
+            text-align: left;
+        }
+
+        gap: 2rem;
+
+        .white-card-title {
+            margin-left: 0;
+        }
+
+        .mission-card {
+            grid-template-rows: repeat(2, auto);
+            grid-template-columns: repeat(2, 1fr);
+            background-color: transparent;
+
+            .mission-card-description {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                grid-area: 1 / 2 / 3 / 3;
+            }
+
+            .green-button {
+                justify-self: end;
+            }
+
+        }
+    }
+
+    .know-container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 3rem;
+
+        .know-card-section {
+            margin-top: 0rem;
+        }
+    }
+
+    .story-top-sub-section {
+        .navy-blue-card-title {
+            margin-left: 5rem;
+        }
+    }
+
+    .story-section {
+        padding-bottom: 0rem;
+
+        img {
+            padding-right: 5rem;
+        }
+    }
+
+    .story-bottom-sub-section {
+        transform: translateY(-30%);
+        padding-left: 5rem;
+
+        .green-button {
+            align-self: start;
+        }
+    }
+
+    .event-section .section-title {
+        white-space: pre-line;
+    }
+
+    .event-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 5rem auto;
+        column-gap: 3rem;
+        align-items: start;
+
+        img {
+            grid-area: 1/1/4/2;
+        }
+
+        .white-card-title {
+            transform: translateY(0%);
+            margin-left: 0;
+        }
+
+        .event-card-content {
+            text-align: left;
+        }
+
+        .green-button {
+            margin-right: auto;
+        }
+    }
+
+    .event-card:nth-of-type(2) {
+        img {
+            grid-area: 1 / 2 / 4 / 3;
+        }
+    }
+
+    .subscribe-container {
+        h2 {
+            white-space: pre-line;
+        }
+
+        .input-container {
+            flex-wrap: nowrap;
+            flex-grow: 1;
+
+            .email {
+                padding-left: 3rem;
+                text-align: left;
+                flex-grow: 2;
+            }
+        }
+    }
+
+    .footer-container {
+        column-gap: auto;
+        grid-template-columns: repeat(3, auto);
+
+        .section-title {
+            text-align: left;
+            grid-area: 2 / 3 / 3 / 4;
+        }
+
+        .contact-us-section {
+            justify-self: start;
+        }
+
+        .learn-more-section {
+            justify-self: start;
+            grid-area: 2 / 2 / 3 / 3;
+        }
+
+    }
+
+}
+
+
+@media(width > 1024px) {
+    html {
+        font-size: 0.9rem;
+    }
+
+    .container {
+        margin: 0 auto;
+    }
+
+    .navigation-container {
+        justify-content: space-between;
+
+        .title-nav-container {
+            .title {
+                flex-grow: 1;
+            }
+
+            flex-grow: 2;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+
+            nav {
+                flex-grow: 5;
+
+                ul {
+                    justify-content: space-evenly;
+                }
+            }
+        }
+    }
+
+    .stop-climate-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+
+
+        .stop-climate-card {
+            order: -1;
+        }
+
+    }
+
+    .take-action-content {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .mission-cards-section {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: 2.5rem;
+    }
+
+    .mission-section {
+
+        .card-container {
+            padding: 0rem 1rem
+        }
+
+        .mission-cards-section {
+            margin-right: 4rem;
+            gap: 4rem;
+        }
+
+        .mission-card {
+
+            .img-container img {
+                width: 120%;
+                aspect-ratio: 3/2;
+            }
+
+            .mission-card-description {
+                grid-area: 2 / 1 / 3 / 2;
+                text-align: left;
+            }
+
+            .green-button {
+                margin: 0 auto;
+            }
+
+            grid-template-rows: repeat(3, auto);
+            grid-template-columns: 1fr;
+        }
+    }
+
+
+    .story-container {
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        padding-bottom: 3rem;
+
+        .story-top-sub-section {
+            align-self: start;
+
+            img {
+                width: 100%;
+                height: 200%;
+                padding-right: 0rem;
+            }
+        }
+
+        .story-bottom-sub-section {
+            align-self: end;
+            order: -1;
+            transform: translateY(0%);
+            transform: translateX(3%);
+
+            .story-content {
+
+                .customised-heading {
+                    text-align: left;
+                }
+            }
+
+            .green-button {
+                align-self: start;
+            }
+        }
+    }
+
+    .subscribe-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+
+        h2 {
+            height: min-content;
+            align-self: flex-start;
+        }
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2rem;
+
+        ul {
+            width: 100%;
+
+            li:first-of-type {
+                border-bottom: 2px solid var(--navy-blue);
+            }
+        }
+
+        .learn-more-section {
+            width: 100%;
+            grid-area: 1 / 4;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            grid-area: 1 / 5;
+        }
+    }
+}
