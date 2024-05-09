@@ -1,6 +1,7 @@
 :root {
     --shady-green: #C0F6D4;
     --navy-blue: #354562;
+    --white: #FFFFFF;
 }
 
 * {
@@ -87,7 +88,7 @@ img {
     font-family: 'flood std';
     font-weight: 400;
     font-size: 4.8rem;
-    color: white;
+    color: var(--white);
     margin-bottom: 5rem;
 }
 
@@ -104,7 +105,7 @@ img {
 
 
 .card {
-    background-color: white;
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,11 +128,11 @@ img {
 
 .navy-blue-card-title {
     background-color: var(--navy-blue);
-    color: white;
+    color: var(--white);
 }
 
 .white-card-title {
-    background-color: white;
+    background-color: var(--white);
     color: var(--navy-blue);
 }
 
@@ -149,7 +150,7 @@ img {
 
 .theme-navy-blue {
     background-color: var(--navy-blue);
-    color: white;
+    color: var(--white);
 }
 
 .theme-white {
