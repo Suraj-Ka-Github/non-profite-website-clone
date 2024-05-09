@@ -310,9 +310,10 @@
         gap: 3rem;
 
         .know-card-section {
-            .navy-blue-card-title{
+            .navy-blue-card-title {
                 margin: 0;
             }
+
             margin-top: 0rem;
         }
     }
@@ -502,8 +503,9 @@
             grid-template-columns: 1fr;
         }
     }
+
     .know-card-section .navy-blue-card-title {
-            margin: 0;
+        margin: 0;
     }
 
     .story-container {
